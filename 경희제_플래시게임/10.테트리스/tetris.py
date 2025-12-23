@@ -124,7 +124,7 @@ class Block:
     """ 블록 객체 """
     def __init__(self, count):
         self.turn = 0 # TODO : 다양한 모양이 나오게 변경하기 
-        self.type = BLOCK_DATA[0] # TODO : 다양한 모양이 나오게 변경하기 
+        self.type = BLOCK_DATA[randint(0, len(BLOCK_DATA) - 1)] # TODO : 다양한 모양이 나오게 변경하기 
         self.data = self.type[self.turn]
         self.size = int(sqrt(len(self.data)))
         self.xpos = randint(2, 8 - self.size)
