@@ -17,10 +17,10 @@ clock= pygame.time.Clock()
 last_moved_time = datetime.now()
  
 KEY_DIRECTION = {
-    pygame.K_UP: 'N',
+    pygame.K_UP: 'W',
     pygame.K_DOWN: 'S',
-    pygame.K_LEFT: 'W',
-    pygame.K_RIGHT: 'E',
+    pygame.K_LEFT: 'A',
+    pygame.K_RIGHT: 'D',
 }
  
 def draw_block(screen, color, position):
@@ -105,3 +105,4 @@ def runGame():
  
 runGame()
 pygame.quit()
+
